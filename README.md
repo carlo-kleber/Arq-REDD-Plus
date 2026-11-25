@@ -39,3 +39,7 @@ The original simulation code and experimental materials are available at https:/
 ## Citation
 
 See [CITATION.cff](CITATION.cff). The accompanying manuscript is under revision; no publication DOI is asserted.
+
+## License
+
+Original architectural documentation is licensed under [CC BY 4.0](LICENSE.md). Third-party materials and upstream simulation software retain their applicable licenses.
