@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this architectural specification, please cite this repository and the accompanying manuscript."
+title: "Arq-REDD+: Supplementary Architectural Specification"
+type: dataset
+authors:
+  - given-names: "Marcela Ceschim"
+    family-names: "Caburlão"
+    affiliation: "Universidade Federal do ABC"
+  - given-names: "Carlo Kleber"
+    family-names: "da Silva Rodrigues"
+    affiliation: "Universidade Federal do ABC"
+repository-code: "https://github.com/carlo-kleber/Arq-REDD-Plus"
