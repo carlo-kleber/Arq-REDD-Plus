@@ -1,0 +1,25 @@
+# Architectural Foundations
+
+Arq-REDD+ is a domain-specific reference architecture designed to guide the development of the Technological Level of Blockchain-based REDD+ projects. Its architectural specification is derived from the requirements identified at the Conceptual and Operational Levels and systematized in Table 4 of the accompanying manuscript. These requirements encompass project documentation and MRV data traceability, carbon credit life-cycle management, socio-environmental safeguards, governance, access control, privacy, distributed agreement, data integrity, integration with external systems, and technological evolution.
+
+The model is structured into the Network, Consensus, and Application layers, as illustrated in Figure 2 of the accompanying manuscript. Following the design rationale established in the methodological stage, this organization distinguishes responsibilities related to communication and network participation, agreement on the valid state of the distributed ledger, and execution of domain-specific processes.
+
+The architectural specification of Arq-REDD+ distinguishes five complementary elements:
+
+- **Architectural layers:** logical divisions that organize architectural responsibilities according to the nature of the functions performed.
+- **Functional components:** logical units responsible for realizing specific architectural functions associated with one or more requirements of the model.
+- **Interface contracts:** specifications of the interactions among functional components and between the architecture and external systems, including the information exchanged, operational conditions, and expected behavior.
+- **Technological decision points:** aspects of the architecture for which alternative implementation technologies or mechanisms may be considered.
+- **Compatibility constraints:** conditions that determine whether a combination of technological alternatives can satisfy the applicable requirements while preserving the architectural responsibilities and interface contracts.
+
+The architectural layers, functional responsibilities, and interface contracts define the invariant structure of Arq-REDD+. Technological decision points and their associated compatibility constraints define the space of admissible implementation configurations. Functional components represent logical responsibilities and do not necessarily correspond to independently deployed software modules. Depending on the selected technologies, multiple functional components may be realized by the same implementation module, or a single functional component may be realized through multiple cooperating modules.
+
+The Network Layer encompasses responsibilities related to communication, network participation, stakeholder authentication, access enforcement, and information visibility. The Consensus Layer encompasses responsibilities related to distributed agreement, ledger state consistency, and the establishment of transaction finality according to the selected consensus mechanism. The Application Layer encompasses domain-specific responsibilities related to project documentation, MRV evidence management, carbon credit life-cycle management, governance rules, and integration with external systems.
+
+These responsibilities are complementary and may involve interactions across multiple layers. In particular, identity management, authorization, data protection, and transaction validation may require coordinated mechanisms rather than being exclusively associated with a single layer.
+
+For example, the issuance of carbon credits following the verification of emission reductions requires the identification of the relevant project and supporting evidence, the verification of the applicable authorization and issuance conditions, the submission and processing of the corresponding operation, and the establishment of a valid ledger state. It may also require reconciliation with an external carbon registry. The realization of this process therefore involves responsibilities distributed across the three architectural layers. The specific execution sequence and the allocation of these responsibilities to implementation modules depend on the selected technological configuration.
+
+The agnostic nature of Arq-REDD+ does not imply that technological alternatives are interchangeable without restrictions. Rather, it stems from the explicit distinction between invariant architectural responsibilities and configurable implementation decisions. Different network models, consensus protocols, data protection mechanisms, credit representation standards, and integration technologies may be selected during system design, provided that the resulting configuration satisfies the applicable domain requirements, preserves the specified interface contracts, and complies with the compatibility constraints.
+
+The remaining specification documents detail the functional responsibilities and components of each architectural layer, their correspondence with the requirements catalogue, and the technological decisions associated with their implementation.
